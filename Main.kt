@@ -10,23 +10,24 @@ class Student3 {
 }
 
 //zadanie 4
-class Student4(name: String = "mike", var university: String = "AGH") {
-    var name: String = name
+class Student4(_name: String = "mike", var university: String = "AGH") {
+    var name: String = _name
         get() = field.replaceFirstChar { it.uppercase() }
 }
 
 //zadanie 5
-class Student5(name: String = "mike", private var university: String = "AGH") {
-    private var name: String = name
+class Student5(_name: String = "mike", _university: String = "AGH") {
+    private var name: String = _name
         get() = field.replaceFirstChar { it.uppercase() }
-    val showStudent = { println("${this.name}, $university") }
+    private var university: String = _university
+    val showStudent = { println("${this.name}, ${this.university}") }
 }
 
 //zadanie 6
 open class Person(val name: String)
 
-class Student6(name: String, private val university: String = "AGH") : Person(name) {
-    val showStudent = { println("${name.replaceFirstChar { it.uppercase() }}, $university") }
+class Student6(_name: String, private val university: String = "AGH") : Person(_name) {
+    val showStudent = { println("${this.name.replaceFirstChar { it.uppercase() }}, $university") }
 }
 
 fun main() {
