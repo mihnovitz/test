@@ -1,3 +1,7 @@
+val studentStatus = { name: String, auraColour: String ->
+    println("$name has a $auraColour face color")
+}
+
 fun main() {
-    println("Hello, Kotlin!")
+    studentStatus("Mike", "red")
 }
