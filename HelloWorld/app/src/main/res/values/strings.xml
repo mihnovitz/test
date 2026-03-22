@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="first_activity_label">First activity!</string>
+    <string name="second_activity_label">Hello second activity!</string>
+    <string name="btn_start_activity">Start new activity</string>
+    <string name="android_logo_desc">Android logo</string>
+</resources>
